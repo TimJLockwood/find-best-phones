@@ -39,7 +39,7 @@ public class Phone {
 	 * other criterion.
 	 */
 	public boolean dominates(Phone other) {
-		// TODO: implement this method
-		return false;
+		return((this.getBatteryCapacity() > other.getBatteryCapacity() && this.getScreenSize() >= other.getScreenSize())
+		|| (this.getScreenSize() > other.getScreenSize() && this.getBatteryCapacity() >= other.getBatteryCapacity()));
 	}
 }
